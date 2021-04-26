@@ -1,0 +1,33 @@
+\documentclass[a4paper,12pt]{article}
+%For images
+\usepackage{graphicx}
+ 
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+ 
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+ 
+\begin{document}
+
+Yatzee has a few rules
+You throw 6 dice and then pick out a subset of those dice and can do that
+2 times. Total dice throws is therefore 3.
+
+\paragraph{}
+One can after any dice throw then decide from a set of rules to try and maximize
+ones points. Examples could be 3 dice who have the same value, or full house. I will
+now preceed to make an algorithm that can closely determine the optimal way of playing
+Yatzee
+
+\paragraph{}
+Let's begin with a greedy algorithm. It will not reroll any dice and pick whatever gives
+the highest reward in the near term. For rulepoint i, point function q and dice X,
+for each round of the game
+
+$$\max_{i\in I_t} q_i({X_1,...,X_6}), I_{t+1} = I_t - i$$
+
+
+
+\end{document}
