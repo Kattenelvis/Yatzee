@@ -39,6 +39,13 @@ no general closed solution to a yatzee game, but instead has to either be analyz
 one by one or use maybe some form of reinforcment learning algorithm that
 approximates the outcomes.
 
+
+However if you do have a solution to subsets of rules then you could
+recursively solve the game. Once a rule has been played, the game is now smaller.
+The optimization algorithm can ignore previous scores for they don't matter anymore.
+Hence solving simpler systems and the building up like a tree would work.
+
+
 \section{Closed solution to a basic yatzee game}
 
 I will begin with this, but I doubt it's generalizable. The only part
